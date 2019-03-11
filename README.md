@@ -1,2 +1,6 @@
 # helloTomato
-a tool for work, it includes a timer, a todo list for now
+随便用什么方式把工程down到本地，用安装已解压的扩展程序的方式安装整个工程文件夹
+
+安装成功浏览器右上角会出现一个红色的T图标，点击打开一个pop，可以设置时间，也可以打开todo list，查看相关任务
+
+enjoy
