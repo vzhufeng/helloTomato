@@ -6,6 +6,7 @@ chrome.browserAction.onClicked.addListener(show);
 
 var timerId = 0;
 var minutes = 0;
+localStorage.setItem("minutes", 0);
 
 chrome.runtime.onConnect.addListener(function(popupPort) {
   var port = popupPort;

@@ -11,7 +11,8 @@ var todo = document.getElementById("todo");
 
 btnStart.addEventListener("click", function() {
   var minute = document.getElementById("minutes").value;
-  port.postMessage({ alarm: true, time: +minute.replace(/[^\d]/g, "") });
+  minute = +minute.replace(/[^\d]/g, "");
+  port.postMessage({ alarm: true, time: minute > 60 ? 60 : minute });
 });
 
 btnStop.addEventListener("click", function() {
@@ -30,4 +31,4 @@ setInterval(function() {
   var sec = time % 60;
 
   leftTime.innerHTML = min + ":" + sec;
-}, 1000);
+}, 500);

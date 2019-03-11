@@ -9,14 +9,22 @@
       p {
         margin: 10px 0;
       }
+      .center{
+        text-align: center;
+      }
     </style>
   </head>
   <body>
     <div>
       <p>设置时间：<input type="text" id="minutes" /></p>
       <p>剩余时间：<span id="leftTime"></span></p>
-      <p><button id="start">开始</button> <button id="stop">停止</button></p>
-      <p><button id="todo">打开todo list</button></p>
+      <p class="center">
+        <button id="start">开始</button>
+        <button id="stop">停止</button>
+      </p>
+      <p class="center">
+        <button id="todo">打开todo list</button>
+      </p>
     </div>
 
     <script src="popup.js"></script>
