@@ -7,6 +7,7 @@ chrome.browserAction.onClicked.addListener(show);
 var timerId = 0;
 var minutes = 0;
 localStorage.setItem("minutes", 0);
+localStorage.setItem("tomato", 0);
 
 chrome.runtime.onConnect.addListener(function(popupPort) {
   var port = popupPort;
@@ -23,6 +24,10 @@ chrome.runtime.onConnect.addListener(function(popupPort) {
         } else {
           minutes = 0;
           clearTimeout(timerId);
+          if (msg.work) {
+            var num = localStorage.getItem("tomato");
+            localStorage.setItem("tomato", ++num);
+          }
           show();
         }
         localStorage.setItem("minutes", minutes);

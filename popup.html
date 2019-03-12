@@ -3,20 +3,24 @@
     <meta charset="utf-8" />
     <style>
       body {
+        padding: 10px;
         width: 200px;
-        height: 120px;
       }
       p {
         margin: 10px 0;
       }
-      .center{
+      .center {
         text-align: center;
+      }
+      #tomato{
+        margin-right: 10px;
       }
     </style>
   </head>
   <body>
     <div>
       <p>设置时间：<input type="text" id="minutes" /></p>
+      <p>休息时间：<input type="checkbox" id="workTime" /></p>
       <p>剩余时间：<span id="leftTime"></span></p>
       <p class="center">
         <button id="start">开始</button>
@@ -24,6 +28,10 @@
       </p>
       <p class="center">
         <button id="todo">打开todo list</button>
+      </p>
+      <p>
+        完成番茄个数：<span id="tomato"></span>
+        <button id="clear">清零</button>
       </p>
     </div>
 
