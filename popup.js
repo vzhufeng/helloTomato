@@ -7,7 +7,6 @@ try {
 var btnStart = document.getElementById("start");
 var btnStop = document.getElementById("stop");
 var leftTime = document.getElementById("leftTime");
-var todo = document.getElementById("todo");
 var tomato = document.getElementById("tomato");
 var clear = document.getElementById("clear");
 var workTime = document.getElementById("workTime");
@@ -23,12 +22,6 @@ btnStart.addEventListener("click", function() {
 
 btnStop.addEventListener("click", function() {
   port.postMessage({ alarm: false });
-});
-
-todo.addEventListener("click", function() {
-  chrome.tabs.create({
-    url: "chrome-extension://" + chrome.runtime.id + "/example.html"
-  });
 });
 
 clear.addEventListener("click", function() {

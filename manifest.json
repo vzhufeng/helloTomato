@@ -3,7 +3,7 @@
 
   "version": "1.0.0",
 
-  "description": "a tool for work, it includes a timer, a todo list for now",
+  "description": "a tool for tomato timer",
 
   "icons": { 
     "16": "icon.png", 
@@ -19,7 +19,7 @@
 
   "browser_action": {
     "default_icon": "icon.png",
-    "default_title": "hello timer",
+    "default_title": "hello tomato",
     "default_popup": "popup.html"
   }
 }
